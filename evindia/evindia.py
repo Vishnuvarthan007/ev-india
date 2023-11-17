@@ -6,7 +6,7 @@ ch = {
 }
 ch = pd.DataFrame(ch)
 st.title("EV camparisions")
-df = pd.read_csv("EVIndia.csv")
+df = pd.read_csv("evindia/EVIndia.csv")
 user_input_text_1 = st.text_input("parameter 1", key="text_input_1", value="Car")
 user_input_text_2 = st.selectbox("Select Parameter", df.columns)
 selected_chart = st.selectbox("Select Chart Type", ch['chart'].unique())
